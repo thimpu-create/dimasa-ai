@@ -1,0 +1,164 @@
+{
+  "language": "Dimasa",
+  "family": "Sino-Tibetan / Tibeto-Burman / Bodo-Garo",
+  "word_order": "SOV (Subject - Object - Verb)",
+  "features": {
+    "gender": "Natural sex recognition; no grammatical gender inflection on verbs or adjectives.",
+    "number": "Plural markers (-buthu / -si), but no grammatical subject-predicate number agreement.",
+    "case_relations": "Expressed via postpositions.",
+    "verb_roots": "Primarily monosyllabic.",
+    "causative": "Formed by suffixing / adding 'ri' (give) to verb root.",
+    "classifiers": {
+      "human": "sao- (e.g., subung sao-si = one person)",
+      "animals": "ma- (e.g., alu ma-si = one cat, misi ma-si = one tiger)",
+      "long/cylindrical/tools": "gong- (e.g., repgong gong-si = one pen, bongphang gong-si = one tree)",
+      "flat/thin": "la- / patha-",
+      "round/fruit": "thai- (e.g., thaigao thai-si = one fruit)"
+    },
+    "case_markers": {
+      "nominative": "unmarked or -ra",
+      "accusative_objective": "-ke (e.g., angke = me, boke = him/her, ningke = you)",
+      "genitive_possessive": "-ni (e.g., ani = my, nini = your, boni = his/her, jini = our)",
+      "locative_dative": "-ha / -niha (e.g., noha = at home, in the house)"
+    },
+    "tense_aspect_markers": {
+      "present_simple_continuous": "-du / -duhi (e.g., thangdu = going/goes, jadu = eating/eats)",
+      "past_completed": "-ba (e.g., thangba = went, jaba = ate, nuba = saw)",
+      "future_intention": "-nang / -ma (e.g., thangnang = will go, janang = will eat)",
+      "imperative": "-bo / -ba (e.g., fabo = come!, thango = go!)",
+      "negative": "da- prefix (imperative negative: dathang = don't go!) or -ya suffix (present/past negative: thangya = does not go)"
+    }
+  },
+  "pronouns": [
+    {
+      "dimasa": "ang",
+      "ipa": "aŋ",
+      "english": "I",
+      "type": "subject"
+    },
+    {
+      "dimasa": "angke",
+      "ipa": "aŋ.khe",
+      "english": "me",
+      "type": "object"
+    },
+    {
+      "dimasa": "ani",
+      "ipa": "a.ni",
+      "english": "my",
+      "type": "possessive"
+    },
+    {
+      "dimasa": "angjar",
+      "ipa": "aŋ.zar",
+      "english": "myself",
+      "type": "reflexive"
+    },
+    {
+      "dimasa": "ning",
+      "ipa": "niŋ",
+      "english": "you",
+      "type": "subject"
+    },
+    {
+      "dimasa": "ningke",
+      "ipa": "niŋ.khe",
+      "english": "you (object)",
+      "type": "object"
+    },
+    {
+      "dimasa": "nini",
+      "ipa": "ni.ni",
+      "english": "your",
+      "type": "possessive"
+    },
+    {
+      "dimasa": "bo",
+      "ipa": "bo",
+      "english": "he/she/it",
+      "type": "subject"
+    },
+    {
+      "dimasa": "boke",
+      "ipa": "bo.khe",
+      "english": "him/her",
+      "type": "object"
+    },
+    {
+      "dimasa": "boni",
+      "ipa": "bo.ni",
+      "english": "his/her",
+      "type": "possessive"
+    },
+    {
+      "dimasa": "jing",
+      "ipa": "dziŋ",
+      "english": "we",
+      "type": "subject"
+    },
+    {
+      "dimasa": "jini",
+      "ipa": "dzi.ni",
+      "english": "our",
+      "type": "possessive"
+    },
+    {
+      "dimasa": "nisi",
+      "ipa": "ni.tsi",
+      "english": "you (plural)",
+      "type": "subject"
+    },
+    {
+      "dimasa": "nisini",
+      "ipa": "ni.tsI.ni",
+      "english": "your (plural)",
+      "type": "possessive"
+    },
+    {
+      "dimasa": "bonsi",
+      "ipa": "bɔn.tsi",
+      "english": "they",
+      "type": "subject"
+    },
+    {
+      "dimasa": "bonsini",
+      "ipa": "bɔn.tsI.ni",
+      "english": "their",
+      "type": "possessive"
+    }
+  ],
+  "question_words": [
+    {
+      "dimasa": "sere",
+      "english": "who"
+    },
+    {
+      "dimasa": "serene",
+      "english": "whom"
+    },
+    {
+      "dimasa": "sereni",
+      "english": "whose"
+    },
+    {
+      "dimasa": "nadi",
+      "english": "what"
+    },
+    {
+      "dimasa": "braha / bahani",
+      "english": "where"
+    },
+    {
+      "dimasa": "bese",
+      "english": "when"
+    },
+    {
+      "dimasa": "bedehe",
+      "english": "how"
+    },
+    {
+      "dimasa": "bisi",
+      "english": "how many / how much"
+    }
+  ]
+}

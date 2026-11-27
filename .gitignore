@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+web/node_modules/
+
+# Production builds
+dist/
+web/dist/
+
+# Environment credentials
+.env
+.env.local
+web/.env
+web/.env.local
+*.env*
+!*.env.example
+
+# Large source assets
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+{"messages": [{"role": "user", "content": "Translate to Dimasa: Greetings / Welcome / Hello"}, {"role": "assistant", "content": "Hamlai"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: How are you?"}, {"role": "assistant", "content": "Bedehe dung?"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: I am doing well / I am fine"}, {"role": "assistant", "content": "Ang khahamu dung"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: What is your name?"}, {"role": "assistant", "content": "Nini mum nadi?"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: My name is ..."}, {"role": "assistant", "content": "Ani mum ..."}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: Where are you going?"}, {"role": "assistant", "content": "Ning bahani thangdu?"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: I am going home"}, {"role": "assistant", "content": "Ang noha thangdu"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: I am eating food / rice"}, {"role": "assistant", "content": "Ang mai jadu"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: I am drinking water"}, {"role": "assistant", "content": "Ang di longdu"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: Greetings to all / everyone"}, {"role": "assistant", "content": "Khripboke hamlai"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}
+{"messages": [{"role": "user", "content": "Translate to Dimasa: Thank you"}, {"role": "assistant", "content": "Khable ba"}], "metadata": {"source": "Dimasa dictionary", "category": "Phrases"}}

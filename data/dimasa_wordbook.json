@@ -1,0 +1,930 @@
+{
+  "source": "Dimasa Word Book & Linguistic Records",
+  "total_entries": 120,
+  "words": [
+    {
+      "dimasa": "ang",
+      "ipa": "aŋ",
+      "english": "I",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "angke",
+      "ipa": "aŋ.khe",
+      "english": "me",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "ani",
+      "ipa": "a.ni",
+      "english": "my / mine",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "ning",
+      "ipa": "niŋ",
+      "english": "you",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "ningke",
+      "ipa": "niŋ.khe",
+      "english": "you (object)",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "nini",
+      "ipa": "ni.ni",
+      "english": "your / yours",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "bo",
+      "ipa": "bo",
+      "english": "he / she / it",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "boke",
+      "ipa": "bo.khe",
+      "english": "him / her",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "boni",
+      "ipa": "bo.ni",
+      "english": "his / her",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "jing",
+      "ipa": "dziŋ",
+      "english": "we",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "jini",
+      "ipa": "dzi.ni",
+      "english": "our / ours",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "bonsi",
+      "ipa": "bɔn.tsi",
+      "english": "they",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "bonsini",
+      "ipa": "bɔn.tsI.ni",
+      "english": "their / theirs",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "ebo",
+      "ipa": "E.bo",
+      "english": "this",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "haobo",
+      "ipa": "haO.bo",
+      "english": "that",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "sere",
+      "ipa": "sE.re",
+      "english": "who",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "nadi",
+      "ipa": "na.di",
+      "english": "what",
+      "category": "Pronouns",
+      "pos": "PRON"
+    },
+    {
+      "dimasa": "braha",
+      "ipa": "bra.ha",
+      "english": "where",
+      "category": "Pronouns",
+      "pos": "ADV"
+    },
+    {
+      "dimasa": "bahani",
+      "ipa": "ba.ha.ni",
+      "english": "where to",
+      "category": "Pronouns",
+      "pos": "ADV"
+    },
+    {
+      "dimasa": "bedehe",
+      "ipa": "bE.dE.he",
+      "english": "how",
+      "category": "Pronouns",
+      "pos": "ADV"
+    },
+    {
+      "dimasa": "bisi",
+      "ipa": "bI.tsi",
+      "english": "how many",
+      "category": "Pronouns",
+      "pos": "ADV"
+    },
+    {
+      "dimasa": "ja",
+      "ipa": "dza",
+      "english": "eat",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "long",
+      "ipa": "lɔŋ",
+      "english": "drink",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "thang",
+      "ipa": "tʰaŋ",
+      "english": "go",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "fa",
+      "ipa": "pʰa",
+      "english": "come",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "nu",
+      "ipa": "nu",
+      "english": "see / look",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "sa",
+      "ipa": "sa",
+      "english": "say / tell",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "khna",
+      "ipa": "kʰna",
+      "english": "hear / listen",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "thu",
+      "ipa": "tʰu",
+      "english": "sleep",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "se",
+      "ipa": "sE",
+      "english": "write",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "pori",
+      "ipa": "po.ri",
+      "english": "read / study",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "ri",
+      "ipa": "ri",
+      "english": "give",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "la",
+      "ipa": "la",
+      "english": "take",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "bai",
+      "ipa": "bai",
+      "english": "dance",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "bir",
+      "ipa": "bir",
+      "english": "fly",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "bao",
+      "ipa": "bao",
+      "english": "think",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "blao",
+      "ipa": "blao",
+      "english": "forget",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "gi",
+      "ipa": "gi",
+      "english": "fear / be afraid",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "si",
+      "ipa": "si",
+      "english": "know",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "dung",
+      "ipa": "duŋ",
+      "english": "exist / be / is",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "dong",
+      "ipa": "dɔŋ",
+      "english": "stay / have",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "kham",
+      "ipa": "kʰam",
+      "english": "burn / work",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "haba",
+      "ipa": "ha.ba",
+      "english": "work / do work",
+      "category": "Verbs",
+      "pos": "VERB"
+    },
+    {
+      "dimasa": "misi",
+      "ipa": "mi.tsi",
+      "english": "tiger",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "misima",
+      "ipa": "mi.tsi.ma",
+      "english": "mother tiger / tigress",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "misisa",
+      "ipa": "mi.tsi.sa",
+      "english": "tiger cub",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "misep",
+      "ipa": "mi.tsEp",
+      "english": "buffalo",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "misai",
+      "ipa": "mi.sai",
+      "english": "deer",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "melma",
+      "ipa": "mEl.ma",
+      "english": "sheep",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "melsa",
+      "ipa": "mEl.sa",
+      "english": "lamb",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "alu",
+      "ipa": "a.lu",
+      "english": "cat",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "sa",
+      "ipa": "sa",
+      "english": "cow / cattle",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "musu",
+      "ipa": "mu.su",
+      "english": "bull / cow",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "se",
+      "ipa": "sE",
+      "english": "horse",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "wak",
+      "ipa": "wak",
+      "english": "pig",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "dao",
+      "ipa": "dao",
+      "english": "bird / fowl",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "daotu",
+      "ipa": "dao.tu",
+      "english": "dove",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "na",
+      "ipa": "na",
+      "english": "fish",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "midi",
+      "ipa": "mi.di",
+      "english": "porcupine",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "miyaolai",
+      "ipa": "mi.yao.lai",
+      "english": "mongoose",
+      "category": "Animals",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "di",
+      "ipa": "di",
+      "english": "water",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "dikro",
+      "ipa": "di.kro",
+      "english": "stream / river",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "dima",
+      "ipa": "di.ma",
+      "english": "great river / big river",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "ha",
+      "ipa": "ha",
+      "english": "earth / land / soil",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "hadao",
+      "ipa": "ha.dao",
+      "english": "mountain / hill",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "sorgo",
+      "ipa": "sor.go",
+      "english": "sky",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "sain",
+      "ipa": "sain",
+      "english": "sun / day",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "dain",
+      "ipa": "dain",
+      "english": "moon / month",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "hathai",
+      "ipa": "ha.tʰai",
+      "english": "stone",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "bongphang",
+      "ipa": "bɔŋ.pʰaŋ",
+      "english": "tree",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "bilai",
+      "ipa": "bi.lai",
+      "english": "leaf",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "bibar",
+      "ipa": "bi.bar",
+      "english": "flower",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "thaigao",
+      "ipa": "tʰai.gao",
+      "english": "fruit",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "bar",
+      "ipa": "bar",
+      "english": "wind / air",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "hor",
+      "ipa": "hor",
+      "english": "fire",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "nokhor",
+      "ipa": "no.kʰor",
+      "english": "smoke",
+      "category": "Natural Objects",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "no",
+      "ipa": "no",
+      "english": "house / home",
+      "category": "House",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "nohsai",
+      "ipa": "noh.sai",
+      "english": "village / home place",
+      "category": "House",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "lama",
+      "ipa": "la.ma",
+      "english": "road / path / way",
+      "category": "House",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "khonoma",
+      "ipa": "kʰo.no.ma",
+      "english": "door",
+      "category": "House",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "mai",
+      "ipa": "mai",
+      "english": "cooked rice / meal / food",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "mairong",
+      "ipa": "mai.rɔŋ",
+      "english": "uncooked rice grain",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "dugang",
+      "ipa": "du.gaŋ",
+      "english": "curry",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "sam",
+      "ipa": "sam",
+      "english": "salt",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "thau",
+      "ipa": "tʰau",
+      "english": "oil",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "cha",
+      "ipa": "tʃa",
+      "english": "tea",
+      "category": "Foods",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "khur",
+      "ipa": "kʰur",
+      "english": "head",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "mukhur",
+      "ipa": "mu.kʰur",
+      "english": "face",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "me",
+      "ipa": "mE",
+      "english": "eye",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "khonor",
+      "ipa": "kʰo.nor",
+      "english": "ear",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "gongthe",
+      "ipa": "gɔŋ.tʰE",
+      "english": "nose",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "ku",
+      "ipa": "ku",
+      "english": "mouth",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "hatho",
+      "ipa": "ha.tʰo",
+      "english": "tooth",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "salai",
+      "ipa": "sa.lai",
+      "english": "tongue",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "ya",
+      "ipa": "ya",
+      "english": "hand / arm",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "ja",
+      "ipa": "dza",
+      "english": "foot / leg",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "bikhuk",
+      "ipa": "bi.kʰuk",
+      "english": "chest",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "buklub",
+      "ipa": "buk.lub",
+      "english": "belly / stomach",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "khim",
+      "ipa": "kʰim",
+      "english": "hair",
+      "category": "Body Parts",
+      "pos": "NOUN"
+    },
+    {
+      "dimasa": "khao",
+      "ipa": "kʰao",
+      "english": "good",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "ham",
+      "ipa": "ham",
+      "english": "nice / well / beneficial",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gejen",
+      "ipa": "gE.dzen",
+      "english": "big / large",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "khasa",
+      "ipa": "kʰa.sa",
+      "english": "small / tender / young",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gjao",
+      "ipa": "gdzao",
+      "english": "tall / high",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gidi",
+      "ipa": "gi.di",
+      "english": "heavy",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gojin",
+      "ipa": "go.dzin",
+      "english": "red",
+      "category": "Colour Terms",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gophu",
+      "ipa": "go.pʰu",
+      "english": "white",
+      "category": "Colour Terms",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gisim",
+      "ipa": "gi.sim",
+      "english": "black",
+      "category": "Colour Terms",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "sainjang",
+      "ipa": "sain.dzaŋ",
+      "english": "yellow",
+      "category": "Colour Terms",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "gjao",
+      "ipa": "gdzao",
+      "english": "sweet",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "khakhao",
+      "ipa": "kʰa.kʰao",
+      "english": "bitter",
+      "category": "Adjectives",
+      "pos": "ADJ"
+    },
+    {
+      "dimasa": "se",
+      "ipa": "sE",
+      "english": "one (1)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "gini",
+      "ipa": "gi.ni",
+      "english": "two (2)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "gatham",
+      "ipa": "ga.tʰam",
+      "english": "three (3)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "biri",
+      "ipa": "bi.ri",
+      "english": "four (4)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "banga",
+      "ipa": "ba.ŋa",
+      "english": "five (5)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "do",
+      "ipa": "do",
+      "english": "six (6)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "sini",
+      "ipa": "si.ni",
+      "english": "seven (7)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "jai",
+      "ipa": "dzai",
+      "english": "eight (8)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "skhu",
+      "ipa": "skʰu",
+      "english": "nine (9)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "ji",
+      "ipa": "dzi",
+      "english": "ten (10)",
+      "category": "Numerals",
+      "pos": "NUM"
+    },
+    {
+      "dimasa": "Hamlai",
+      "ipa": "ham.lai",
+      "english": "Greetings / Welcome / Hello",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Bedehe dung?",
+      "ipa": "bE.dE.he duŋ",
+      "english": "How are you?",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ang khahamu dung",
+      "ipa": "aŋ kʰa.ha.mu duŋ",
+      "english": "I am doing well / I am fine",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Nini mum nadi?",
+      "ipa": "ni.ni mum na.di",
+      "english": "What is your name?",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ani mum ...",
+      "ipa": "a.ni mum",
+      "english": "My name is ...",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ning bahani thangdu?",
+      "ipa": "niŋ ba.ha.ni tʰaŋ.du",
+      "english": "Where are you going?",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ang noha thangdu",
+      "ipa": "aŋ no.ha tʰaŋ.du",
+      "english": "I am going home",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ang mai jadu",
+      "ipa": "aŋ mai dza.du",
+      "english": "I am eating food / rice",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Ang di longdu",
+      "ipa": "aŋ di lɔŋ.du",
+      "english": "I am drinking water",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Khripboke hamlai",
+      "ipa": "kʰrIp.bo.kE ham.lai",
+      "english": "Greetings to all / everyone",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    },
+    {
+      "dimasa": "Khable ba",
+      "ipa": "kʰa.blE ba",
+      "english": "Thank you",
+      "category": "Phrases",
+      "pos": "PHRASE"
+    }
+  ]
+}
