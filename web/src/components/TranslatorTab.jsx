@@ -71,7 +71,7 @@ export default function TranslatorTab({
   };
 
   return (
-    <div className="space-y-4 max-w-4xl mx-auto">
+    <div className="space-y-4 w-full">
       {/* Top Utility Bar: Quick Examples & Contributor Identity */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
         {/* Sample Prompt Pills */}

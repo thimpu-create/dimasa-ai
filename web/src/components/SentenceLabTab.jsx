@@ -181,7 +181,7 @@ export default function SentenceLabTab({
   const progressPercentage = Math.round(((currentIndex + 1) / filteredPhrases.length) * 100);
 
   return (
-    <div className="space-y-4 max-w-2xl mx-auto">
+    <div className="space-y-4 w-full">
       {/* The Focused Main Training Card */}
       <div className="bg-white rounded-3xl border border-stone-200/90 shadow-sm p-6 sm:p-8 space-y-6">
         
