@@ -9,7 +9,8 @@ export default function CommunityLabTab({
   contributors = [], 
   onVote, 
   onOpenNewSentenceModal,
-  onExportJsonl 
+  onExportJsonl,
+  isCloudSyncEnabled 
 }) {
   const [filter, setFilter] = useState('all'); // 'all', 'pending', 'verified'
 
@@ -43,6 +44,16 @@ export default function CommunityLabTab({
               Every sentence below is submitted or reviewed by native Dimasa speakers. When an entry reaches 
               <strong> 3 community approvals</strong>, it locks into the <em>Verified Gold Dataset</em> for fine-tuning.
             </p>
+            <div className="flex items-center space-x-2 mt-2">
+              <span className={`inline-flex items-center space-x-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full ${
+                isCloudSyncEnabled 
+                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' 
+                  : 'bg-stone-100 text-stone-600 border border-stone-200'
+              }`}>
+                <span className={`w-1.5 h-1.5 rounded-full ${isCloudSyncEnabled ? 'bg-emerald-500 animate-pulse' : 'bg-stone-400'}`}></span>
+                <span>{isCloudSyncEnabled ? 'Live Supabase Cloud Connected' : 'Offline Mode (Local Storage)'}</span>
+              </span>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">

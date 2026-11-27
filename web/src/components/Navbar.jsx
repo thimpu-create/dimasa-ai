@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sparkles, Users, BookOpen, Languages, User, Key, CheckCircle2 } from 'lucide-react';
 
-export default function Navbar({ activeTab, setActiveTab, onOpenSettings, apiKey, verifiedCount }) {
+export default function Navbar({ activeTab, setActiveTab, onOpenSettings, apiKey, verifiedCount, isCloudSyncEnabled }) {
   const tabs = [
     { id: 'lab', label: 'Translate & Train', mobileLabel: 'Translate', icon: Sparkles },
     { id: 'community', label: 'Community Review', mobileLabel: 'Review', icon: Users, badge: verifiedCount },
@@ -64,20 +64,30 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSettings, apiKey
               })}
             </nav>
 
-            {/* Right Action: Settings / Key */}
+            {/* Right Action: Cloud Status & Engine Settings */}
             <div className="flex items-center space-x-2">
+              {isCloudSyncEnabled && (
+                <div 
+                  className="hidden sm:flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200"
+                  title="Supabase Connected: All submissions sync live across devices"
+                >
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>Cloud Synced</span>
+                </div>
+              )}
+
               <button
                 onClick={onOpenSettings}
                 className={`flex items-center space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all ${
                   apiKey
-                    ? 'bg-emerald-50 text-emerald-700 border-emerald-300 hover:bg-emerald-100'
-                    : 'bg-stone-100 text-stone-700 border-stone-300 hover:bg-stone-200'
+                    ? 'bg-amber-50 text-amber-800 border-amber-300 hover:bg-amber-100'
+                    : 'bg-stone-100 text-stone-700 border-stone-200 hover:bg-stone-200'
                 }`}
-                title="Configure Gemini API Key"
+                title="Configure Translation Engine & Gemini API"
               >
                 <Key className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">{apiKey ? 'Gemini Active' : 'Offline Mode'}</span>
-                {apiKey && <CheckCircle2 className="w-3 h-3 text-emerald-600" />}
+                <span className="hidden sm:inline">{apiKey ? 'Gemini AI' : 'Dictionary Engine'}</span>
+                {apiKey && <CheckCircle2 className="w-3 h-3 text-amber-600" />}
               </button>
             </div>
           </div>

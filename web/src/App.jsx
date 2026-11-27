@@ -82,49 +82,93 @@ export default function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   // Load from cloud database if configured & auto-sync any offline items
-  useEffect(() => {
-    if (isCloudSyncEnabled) {
-      fetchCloudFeed().then(cloudItems => {
-        if (cloudItems && Array.isArray(cloudItems)) {
-          const mapped = cloudItems.map(item => ({
-            id: item.id,
-            english: item.english,
-            aiDraft: item.ai_draft,
-            dimasaCorrection: item.dimasa_correction,
-            author: item.author,
-            timestamp: new Date(item.created_at).toLocaleDateString(),
-            upvotes: item.upvotes,
-            downvotes: item.downvotes,
-            status: item.status,
-            explanation: item.explanation,
-            votedByMe: null
-          }));
+  const syncWithCloud = useCallback(async () => {
+    if (!isCloudSyncEnabled) return;
 
-          // Merge any local-only entries that haven't synced to cloud yet
-          const cloudEnglishSet = new Set(mapped.map(m => (m.english || '').toLowerCase()));
-          const localOnly = feed.filter(f => f && f.english && !cloudEnglishSet.has(f.english.toLowerCase()));
+    try {
+      const cloudItems = await fetchCloudFeed();
+      if (!cloudItems || !Array.isArray(cloudItems)) return;
 
-          if (localOnly.length > 0) {
-            localOnly.forEach(item => {
-              postCloudSentence({
-                english: item.english,
-                ai_draft: item.aiDraft || null,
-                dimasa_correction: item.dimasaCorrection,
-                author: item.author || 'Community Contributor',
-                explanation: item.explanation || 'Migrated from local session',
-                upvotes: item.upvotes || 1,
-                downvotes: item.downvotes || 0,
-                status: item.status || 'pending'
-              });
-            });
-            setFeed([...localOnly, ...mapped]);
-          } else {
-            setFeed(mapped);
-          }
+      const mapped = cloudItems.map(item => ({
+        id: item.id,
+        english: item.english,
+        aiDraft: item.ai_draft,
+        dimasaCorrection: item.dimasa_correction,
+        author: item.author,
+        timestamp: new Date(item.created_at).toLocaleDateString(),
+        upvotes: item.upvotes,
+        downvotes: item.downvotes,
+        status: item.status,
+        explanation: item.explanation,
+        votedByMe: null
+      }));
+
+      // Get current stored local entries from localStorage
+      let localSaved = [];
+      try {
+        const saved = localStorage.getItem('dimasa_community_feed_v2');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) localSaved = parsed;
         }
-      });
+      } catch {}
+
+      const cloudEnglishSet = new Set(mapped.map(m => (m.english || '').trim().toLowerCase()));
+      const localOnly = localSaved.filter(f => f && f.english && !cloudEnglishSet.has(f.english.trim().toLowerCase()));
+
+      if (localOnly.length > 0) {
+        console.log(`[Dimasa AI] Syncing ${localOnly.length} offline local entries to Supabase...`);
+        const syncedEntries = await Promise.all(
+          localOnly.map(async item => {
+            const res = await postCloudSentence({
+              english: item.english.trim(),
+              ai_draft: item.aiDraft || null,
+              dimasa_correction: item.dimasaCorrection.trim(),
+              author: item.author || 'Community Contributor',
+              explanation: item.explanation || 'Submitted in offline mode',
+              upvotes: item.upvotes || 1,
+              downvotes: item.downvotes || 0,
+              status: item.status || 'pending'
+            });
+            if (res && res[0]) {
+              return {
+                id: res[0].id,
+                english: res[0].english,
+                aiDraft: res[0].ai_draft,
+                dimasaCorrection: res[0].dimasa_correction,
+                author: res[0].author,
+                timestamp: new Date(res[0].created_at).toLocaleDateString(),
+                upvotes: res[0].upvotes,
+                downvotes: res[0].downvotes,
+                status: res[0].status,
+                explanation: res[0].explanation,
+                votedByMe: item.votedByMe || null
+              };
+            }
+            return item;
+          })
+        );
+        setFeed([...syncedEntries, ...mapped]);
+      } else {
+        setFeed(prev => {
+          const voteMap = new Map((prev || []).map(p => [(p.english || '').trim().toLowerCase(), p.votedByMe]));
+          return mapped.map(item => ({
+            ...item,
+            votedByMe: voteMap.get((item.english || '').trim().toLowerCase()) || null
+          }));
+        });
+      }
+    } catch (err) {
+      console.warn('[Dimasa AI] Cloud sync error:', err);
     }
   }, []);
+
+  useEffect(() => {
+    syncWithCloud();
+
+    window.addEventListener('online', syncWithCloud);
+    return () => window.removeEventListener('online', syncWithCloud);
+  }, [syncWithCloud]);
 
   // Sync feed to localStorage
   useEffect(() => {
@@ -207,9 +251,10 @@ export default function App() {
   };
 
   // Submit a correction to the community feed (stayOnTab preserves active workflow)
-  const handleSubmitCorrection = ({ english, aiDraft, dimasaCorrection, author, explanation }, stayOnTab = false) => {
+  const handleSubmitCorrection = async ({ english, aiDraft, dimasaCorrection, author, explanation }, stayOnTab = false) => {
+    const tempId = `corr-${Date.now()}`;
     const newEntry = {
-      id: `corr-${Date.now()}`,
+      id: tempId,
       english,
       aiDraft,
       dimasaCorrection,
@@ -225,16 +270,24 @@ export default function App() {
     setFeed(prev => [newEntry, ...prev]);
 
     if (isCloudSyncEnabled) {
-      postCloudSentence({
-        english,
-        ai_draft: aiDraft,
-        dimasa_correction: dimasaCorrection,
-        author: author || 'Community Contributor',
-        explanation,
-        upvotes: 1,
-        downvotes: 0,
-        status: 'pending'
-      });
+      try {
+        const saved = await postCloudSentence({
+          english,
+          ai_draft: aiDraft,
+          dimasa_correction: dimasaCorrection,
+          author: author || 'Community Contributor',
+          explanation,
+          upvotes: 1,
+          downvotes: 0,
+          status: 'pending'
+        });
+
+        if (saved && saved[0] && saved[0].id) {
+          setFeed(prev => prev.map(item => item.id === tempId ? { ...item, id: saved[0].id } : item));
+        }
+      } catch (err) {
+        console.warn('Could not post directly to cloud, will sync on next reconnect:', err);
+      }
     }
 
     if (!stayOnTab) {
@@ -261,6 +314,8 @@ export default function App() {
 
   // Handle voting on translations
   const handleVote = (id, type) => {
+    const isUUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id);
+
     setFeed(prev => prev.map(item => {
       if (item.id !== id) return item;
 
@@ -290,7 +345,7 @@ export default function App() {
 
       const status = up >= 3 ? 'verified' : 'pending';
 
-      if (isCloudSyncEnabled) {
+      if (isCloudSyncEnabled && isUUID) {
         voteCloudSentence(id, up, down, status);
       }
 
@@ -360,6 +415,7 @@ export default function App() {
           onOpenSettings={() => setIsSettingsOpen(true)}
           apiKey={apiKey}
           verifiedCount={verifiedCount}
+          isCloudSyncEnabled={isCloudSyncEnabled}
         />
 
         <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-4 pb-24 md:py-8">
@@ -387,6 +443,7 @@ export default function App() {
                 onVote={handleVote}
                 onOpenNewSentenceModal={() => setIsNewSentenceOpen(true)}
                 onExportJsonl={handleExportJsonl}
+                isCloudSyncEnabled={isCloudSyncEnabled}
               />
             )}
 
