@@ -81,7 +81,7 @@ export default function App() {
   const [isNewSentenceOpen, setIsNewSentenceOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
-  // Load from cloud database if configured
+  // Load from cloud database if configured & auto-sync any offline items
   useEffect(() => {
     if (isCloudSyncEnabled) {
       fetchCloudFeed().then(cloudItems => {
@@ -99,7 +99,28 @@ export default function App() {
             explanation: item.explanation,
             votedByMe: null
           }));
-          setFeed(mapped);
+
+          // Merge any local-only entries that haven't synced to cloud yet
+          const cloudEnglishSet = new Set(mapped.map(m => (m.english || '').toLowerCase()));
+          const localOnly = feed.filter(f => f && f.english && !cloudEnglishSet.has(f.english.toLowerCase()));
+
+          if (localOnly.length > 0) {
+            localOnly.forEach(item => {
+              postCloudSentence({
+                english: item.english,
+                ai_draft: item.aiDraft || null,
+                dimasa_correction: item.dimasaCorrection,
+                author: item.author || 'Community Contributor',
+                explanation: item.explanation || 'Migrated from local session',
+                upvotes: item.upvotes || 1,
+                downvotes: item.downvotes || 0,
+                status: item.status || 'pending'
+              });
+            });
+            setFeed([...localOnly, ...mapped]);
+          } else {
+            setFeed(mapped);
+          }
         }
       });
     }
