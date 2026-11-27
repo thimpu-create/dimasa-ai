@@ -16,6 +16,13 @@ export default function GrammarTab() {
         <h2 className="text-xl sm:text-2xl font-bold text-stone-900 font-heading">
           Dimasa Language Structural Rules
         </h2>
+        <p className="text-xs sm:text-sm text-stone-600 mt-2 leading-relaxed">
+          Initial data and grammar notes are taken from an existing book of Dimasa grammar and most of them may contain inaccuracies. Please write to{' '}
+          <a href="mailto:developerthimpu@gmail.com" className="text-amber-800 font-semibold underline underline-offset-2 hover:text-amber-950">
+            developerthimpu@gmail.com
+          </a>{' '}
+          if something needs to be corrected in this section.
+        </p>
       </div>
 
       {/* Grid of Key Features */}

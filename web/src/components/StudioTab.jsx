@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Languages, Quote, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Languages, Quote, ArrowRight, CheckCircle2, Mail } from 'lucide-react';
 import SentenceLabTab from './SentenceLabTab';
 import TranslatorTab from './TranslatorTab';
 
@@ -134,6 +134,34 @@ export default function StudioTab({
                   <span>Free Text Mode Active</span>
                 </div>
               )}
+            </div>
+
+            {/* Grammar Accuracy Note & Funding Callout */}
+            <div className="pt-4 border-t border-amber-200/60 space-y-3 text-xs text-stone-600 leading-relaxed">
+              <div className="bg-white/80 rounded-2xl p-3.5 border border-stone-200/80 space-y-1">
+                <p className="font-semibold text-stone-800">Note on Initial Data &amp; Grammar</p>
+                <p>
+                  This initial data is taken from an existing book of Dimasa grammar and most of it is incorrect. Please{' '}
+                  <a href="mailto:developerthimpu@gmail.com" className="text-amber-800 font-semibold underline underline-offset-2 hover:text-amber-950">
+                    write to me
+                  </a>{' '}
+                  if something needs to be corrected in the Grammar section.
+                </p>
+              </div>
+
+              <div className="bg-stone-900 text-stone-200 rounded-2xl p-3.5 space-y-2">
+                <p className="font-semibold text-amber-300">Support &amp; Infrastructure Funding</p>
+                <p className="text-[11px] sm:text-xs text-stone-300 leading-relaxed">
+                  This project is not funded at all. If someone is willing to fund this project so that it gets better infrastructure to be trained on, please contact me. Thanks!
+                </p>
+                <a
+                  href="mailto:developerthimpu@gmail.com"
+                  className="inline-flex items-center space-x-1.5 text-[11px] font-bold text-white bg-amber-600 hover:bg-amber-500 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  <Mail className="w-3 h-3" />
+                  <span>developerthimpu@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
         </aside>
